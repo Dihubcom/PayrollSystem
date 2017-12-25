@@ -1,0 +1,36 @@
+body {
+    background: green;
+}
+
+h1 {
+    text-align: center;
+}
+
+#payroll-calc {
+    width: 30%;
+    margin: 25px auto;
+}
+
+.styled-btn {
+    background: #876915;
+    padding: 20px;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 6px #987026;
+    outline: none;
+    border: none;
+    display: inline;
+    position: relative;
+}
+
+.styled-btn:hover {
+    box-shadow: 0 4px #987026;
+    top: 2px;
+}
+
+.styled-btn:active {
+    box-shadow: none;
+    top: 6px;
+}
