@@ -1,0 +1,32 @@
+<% include partials/header %>
+
+<div class="container">
+    <div class="row">
+        <h1>Calculate Payroll for an Employee</h1>
+        <div id="payroll-calc">
+            <form action="/payroll/slip" method="POST">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="name" placeholder="Enter employee name">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="number" name="hours" placeholder="Enter hours worked">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="number" name="rate" placeholder="Enter hourly rate">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="number" name="transport" placeholder="Enter transport allowance">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="number" name="medical" placeholder="Enter medical allowance">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="number" name="tax" placeholder="Enter tax rate">
+                </div>
+                <button class="styled-btn">Calculate</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<% include partials/footer %>
