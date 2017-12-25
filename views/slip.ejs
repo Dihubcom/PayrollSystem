@@ -1,0 +1,16 @@
+<% include partials/header %>
+
+<div class="container">
+    <h1>Hi <%= employee.name %> here is your payroll slip</h1>
+
+    <div class="well">
+        <p><strong>Name: </strong><%= employee.name %></p>
+        <p><strong>Basic Salary: </strong>$<%= Number(employee.hours) * Number(employee.rate) %></p>
+        <p><strong>Transport Allowance: </strong>$<%= Number(employee.transport) %></p>
+        <p><strong>Medical Allowance: </strong>$<%= Number(employee.medical) %></p>
+        <br>
+        <p><strong>Gross Payment: </strong>$<%= Number(employee.hours) * Number(employee.rate) + Number(employee.transport) + Number(employee.medical) %></p>
+        <p><strong>Tax: </strong>$<%= Number(employee.tax) %></p>
+        <p><strong>Net Payment: </strong>$<%= Number(employee.hours) * Number(employee.rate) + Number(employee.transport) + Number(employee.medical) - Number(employee.tax) %></p>
+    </div>
+</div>
